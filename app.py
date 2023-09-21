@@ -111,7 +111,7 @@ def main():
         ret, image = cap.read()
         if not ret:
             break
-        image = cv.flip(image, 1)  # ミラー表示
+        image = cv.flip(image, 0)  # ミラー表示
         debug_image = copy.deepcopy(image)
 
         # 検出実施 #############################################################
